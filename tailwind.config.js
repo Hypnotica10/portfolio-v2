@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '860': '860px',
+      },
       colors: {
         'dark-navy': '#020c1b',
         'navy': '#0a192f',
@@ -25,12 +28,21 @@ module.exports = {
         'mono': ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'monospace'],
       },
       fontSize: {
-        'xs': '15px',
+        'xs': '13px',
+        'sm': '15px',
         'base': '16px',
         'lg': '18px',
         'xl': '20px',
         'xxl': '22px',
-        'heading': '32px',
+        'h2': ['clamp(40px, 8vw, 80px)', {
+          lineHeight: '1.1'
+        }],
+        'heading': ['clamp(26px, 5vw, 32px)', {
+          lineHeight: '1.1'
+        }],
+        'ordinal': ['clamp(16px, 3vw, 20px)', {
+          lineHeight: '1.1'
+        }]
       },
       boxShadow: {
         'base': '3px 3px 0 0 #64ffda',
@@ -39,10 +51,6 @@ module.exports = {
       transitionTimingFunction: {
         'ham-main': 'cubic-bezier(0.55, 0.055, 0.675, 0.19)',
         'ham-main-active': 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-      },
-      transitionProperty: {
-        'top': 'top, opacity',
-        'bottom': 'bottom, transform'
       },
       keyframes: {
         fadeInDown: {
@@ -64,7 +72,7 @@ module.exports = {
             opacity: '0',
             transform: 'translateY(-100%)'
           }
-        }
+        },
       },
       animation: {
         'fadeInDown': 'fadeInDown 250ms ease-in-out 1',

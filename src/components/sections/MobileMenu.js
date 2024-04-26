@@ -68,12 +68,12 @@ const MobileMenu = () => {
                 <ul className='navbar-nav flex font-mono flex-col items-center py-[50px] text-lightest-slate w-full'>
                     {menu && menu.map((item) => (
                         <li key={item.id} className='mx-1.5 hover:text-green focus:text-green transition-all w-full'>
-                            <a data-id={`0${item.id}.`} href={item.tagID} className={`block pt-2.5 px-5 pb-5 capitalize text-center before:content-[attr(data-id)] before:mb-1.5 before:block text-lg before:text-green`}>{item.name}</a>
+                            <a data-id={`0${item.id}.`} href={item.tagID} className={`tracking-widest block pt-2.5 px-5 pb-5 capitalize text-center before:content-[attr(data-id)] before:mb-1.5 before:block text-lg before:text-green`}>{item.name}</a>
                         </li>
                     ))}
                 </ul>
                 <div className='cv'>
-                    <a href='/' className='big-button'>resume</a>
+                    <a href='/' className='button big-button'>resume</a>
                 </div>
             </div>
         </div>
