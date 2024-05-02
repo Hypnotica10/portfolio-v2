@@ -1,17 +1,13 @@
 import React from 'react';
 import Avatar from '../../image/avatar.jpg';
 import { listCompany, listTechnologies } from '../../data';
+import TitleSection from './TitleSection';
 
 const About = () => {
     return (
         <section id='about' className='main-content'>
             <div className='md:py-[100px] sm:py-20 py-14'>
-                <h2 data-ordinal='01.' className='capitalize text-heading flex items-center text-lightest-slate font-bold relative mt-2.5 mb-10
-                                                before:content-[attr(data-ordinal)] before:mr-2.5 before:relative before:text-green before:font-mono before:text-ordinal before:top-1 before:font-normal
-                                                after:relative after:block after:ml-5 after:bg-lightest-navy sm:after:w-80 after:w-4/12 after:h-px
-                '>
-                    About Me
-                </h2>
+                <TitleSection title='About Me' ordinal='01.' />
                 <div className='flex flex-wrap md:flex-row flex-col'>
                     <div className='md:w-7/12'>
                         <p className='mb-4'>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>

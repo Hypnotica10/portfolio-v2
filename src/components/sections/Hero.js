@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section className='hero main-content flex flex-col'>
             <div>
-                <h1 className='ml-2 sm:mb-8 mb-5 text-base font-mono text-green'>Hi, my name is</h1>
+                <h1 className='ml-2 sm:mb-8 mb-5 text-base font-mono text-green font-normal'>Hi, my name is</h1>
             </div>
             <div>
                 <h2 className='text-h2 inline-block tracking-tight'>{name}.</h2>

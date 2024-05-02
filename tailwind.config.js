@@ -42,10 +42,14 @@ module.exports = {
         }],
         'ordinal': ['clamp(16px, 3vw, 20px)', {
           lineHeight: '1.1'
+        }],
+        'title': ['clamp(24px, 5vw, 28px)', {
+          lineHeight: '1.1'
         }]
       },
       boxShadow: {
-        'base': '3px 3px 0 0 #64ffda',
+        'small': '3px 3px 0 0 #64ffda',
+        'big': '4.6px 4px 0 0 #64ffda',
         'mobileMenu': '-10px 0px 30px -15px rgba(2, 12, 27, 0.7)'
       },
       transitionTimingFunction: {
@@ -73,11 +77,25 @@ module.exports = {
             transform: 'translateY(-100%)'
           }
         },
+        fadeup: {
+          '0%': {
+            opacity: '0.01',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          }
+        }
       },
       animation: {
         'fadeInDown': 'fadeInDown 250ms ease-in-out 1',
-        'fadeOutUp': 'fadeOutUp 250ms ease-in-out 1 forwards'
+        'fadeOutUp': 'fadeOutUp 250ms ease-in-out 1 forwards',
+        'fadeup': 'fadeup 600ms ease-in-out 1'
       },
+      zIndex: {
+        '3': '3'
+      }
     },
   },
   plugins: [],

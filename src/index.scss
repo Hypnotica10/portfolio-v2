@@ -41,19 +41,20 @@
     .main-content {
         width: 100%;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .button {
-        @apply inline-block text-green bg-transparent border border-green rounded font-mono leading-none capitalize transition-all hover:shadow-base focus:shadow-base;
+        @apply inline-block text-green bg-transparent border border-green rounded font-mono leading-none capitalize transition-all;
     }
 
     .small-button {
-        @apply py-3 px-4 text-xs hover:-translate-x-[4px] hover:-translate-y-[4px] focus:-translate-x-[4px] focus:-translate-y-[4px];
+        @apply py-3 px-4 text-xs hover:-translate-x-[4px] hover:-translate-y-[4px] focus:-translate-x-[4px] focus:-translate-y-[4px] hover:shadow-small focus:shadow-small;
     }
 
     .big-button {
-        @apply py-4 px-12 text-base hover:-translate-x-[5px] hover:-translate-y-[5px] focus:-translate-x-[5px] focus:-translate-y-[5px];
+        @apply py-4 px-12 text-base hover:-translate-x-[5px] hover:-translate-y-[5px] focus:-translate-x-[5px] focus:-translate-y-[5px] hover:shadow-big focus:shadow-big;
     }
 
     .ham-before {
@@ -88,4 +89,15 @@
         user-select: none;
     }
 
+    .fadeup-enter {
+        opacity: 0.01;
+        transform: translateY(20px);
+        transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .fadeup-enter-active {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
 }
