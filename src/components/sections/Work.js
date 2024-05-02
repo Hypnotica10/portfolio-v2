@@ -31,8 +31,8 @@ const SelfProject = ({ project }) => {
                 </div>
             </div>
             <div className='relative project-image row-start-1 row-end-1 rounded group h-full overflow-hidden'>
-                <a href={project.link} className='block w-full h-full md:bg-green rounded before:absolute before:w-full before:h-full before:transition-all before:bg-navy before:mix-blend-screen group-hover:before:mix-blend-normal transition-all'>
-                    <div className='rounded relative w-full h-full mix-blend-multiply grayscale contrast-100 md:brightness-90 brightness-50 transition-all md:group-hover:mix-blend-normal md:group-hover:grayscale-0'>
+                <a href={project.link} className='block w-full h-full md:bg-green rounded before:absolute before:w-full before:h-full before:transition-all md:before:bg-navy before:mix-blend-screen group-hover:before:mix-blend-normal transition-all'>
+                    <div className='rounded relative w-full h-full mix-blend-multiply grayscale contrast-100 brightness-90 transition-all md:group-hover:mix-blend-normal md:group-hover:grayscale-0'>
                         <img src={require(`../../image/${project.image}`)} alt='' className='block absolute bottom-0 left-0 right-0 top-0 object-cover object-center w-full h-full rounded transition-all' />
                     </div>
                 </a>
