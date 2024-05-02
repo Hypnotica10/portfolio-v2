@@ -6,7 +6,7 @@ import Project from './Project';
 const SelfProject = ({ project }) => {
     return (
         <>
-            <div className='project-content row-start-1 row-end-1 md:p-0 px-6 pt-6 pb-5'>
+            <div className='project-content row-start-1 row-end-1 md:p-0 px-6 pt-6 pb-5 md:bg-transparent'>
                 <p className='my-2.5 text-green font-mono text-xs inline-block uppercase relative z-10'>{project.overline}</p>
                 <h3 className='mb-5'>
                     <a href={project.link} className='text-title hover:text-green transition-all relative z-10'>{project.title}</a>
@@ -31,8 +31,8 @@ const SelfProject = ({ project }) => {
                 </div>
             </div>
             <div className='relative project-image row-start-1 row-end-1 rounded group h-full overflow-hidden'>
-                <a href={project.link} className='block w-full h-full bg-green rounded before:absolute before:w-full before:h-full before:transition-all before:bg-navy before:mix-blend-screen group-hover:before:mix-blend-normal transition-all'>
-                    <div className='rounded relative w-full h-full mix-blend-multiply md:grayscale md:backdrop-brightness-[none] backdrop-brightness-50 contrast-100 md:brightness-90 brightness-50 transition-all group-hover:mix-blend-normal group-hover:grayscale-0'>
+                <a href={project.link} className='block w-full h-full md:bg-green rounded before:absolute before:w-full before:h-full before:transition-all before:bg-navy before:mix-blend-screen group-hover:before:mix-blend-normal transition-all'>
+                    <div className='rounded relative w-full h-full mix-blend-multiply grayscale contrast-100 md:brightness-90 brightness-50 transition-all group-hover:mix-blend-normal group-hover:grayscale-0'>
                         <img src={require(`../../image/${project.image}`)} alt='' className='block absolute bottom-0 left-0 right-0 top-0 object-cover object-center w-full h-full rounded transition-all' />
                     </div>
                 </a>
