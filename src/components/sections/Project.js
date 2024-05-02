@@ -56,6 +56,7 @@ const Project = ({ projects }) => {
 
     useEffect(() => {
         setList(firstSix);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
